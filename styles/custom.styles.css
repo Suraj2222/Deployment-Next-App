@@ -1,0 +1,9 @@
+/* custom-styles.css */
+body {
+  overflow-x: hidden;
+}
+
+.container-1200 {
+  width: 1200px;
+  max-width: 100%;
+}

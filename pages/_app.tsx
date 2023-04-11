@@ -1,5 +1,4 @@
 import Header from "@/components/Layout/Header";
-import Navbar from "@/components/Layout/Navbar";
 import { store, wrapper } from "@/store";
 import { Provider } from "react-redux";
 import "@/styles/globals.css";
@@ -9,8 +8,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
       <Header />
-      <Navbar />
-      <main className="container mx-auto font-inter">
+      <main className="font-inter">
         <Component {...pageProps} />
       </main>
     </Provider>
