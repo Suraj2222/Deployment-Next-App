@@ -11,16 +11,18 @@ module.exports = {
       mobile: "512px",
     },
     boxShadow: {
-      sm: "0px 2px 4px 0px rgba(11,10,55,0.15)",
-      lg: "0px 8px 20px 0px rgba(18,16,99,0.06)",
+      sm: "1px 2px 8px 0px rgba(11,10,55,0.15)",
+      md: "1px 3px 12px 0px rgba(11,10,55,0.2)",
+      lg: "2px 4px 16px 0px rgba(18,16,99,0.3)",
     },
     fontFamily: {
       inter: "Inter,sans-serif",
     },
     fontSize: {
       xs: ["12px", { lineHeight: "20px", letterSpacing: "-0.03em" }],
-      sm: ["14px", { lineHeight: "24px", letterSpacing: "-0.03em" }],
-      lg: ["16px", { lineHeight: "24px", letterSpacing: "-0.03em" }],
+      sm: ["14px", { lineHeight: "20px", letterSpacing: "-0.03em" }],
+      sm: ["16px", { lineHeight: "24px", letterSpacing: "-0.03em" }],
+      lg: ["18px", { lineHeight: "24px", letterSpacing: "-0.03em" }],
       xl: ["20px", { lineHeight: "28px", letterSpacing: "-0.03em" }],
       "2xl": ["24px", { lineHeight: "32px", letterSpacing: "-0.032em" }],
       "3xl": ["32px", { lineHeight: "48px", letterSpacing: "-0.032em" }],

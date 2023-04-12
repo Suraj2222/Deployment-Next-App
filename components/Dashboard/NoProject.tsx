@@ -45,7 +45,7 @@ const NoProject = () => {
         {cards?.map(({ imgSrc, altText, title, icon }) => (
           <div
             key={title}
-            className="w-56 h-40 border-2 border-black flex flex-col rounded-lg shadow-lg"
+            className="w-56 h-40 border-2 border-black flex flex-col rounded-lg shadow-md hover:shadow-lg"
           >
             <Image
               className="h-3/4"
