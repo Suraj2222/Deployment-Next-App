@@ -1,5 +1,7 @@
+import { projects } from "@/data";
 import DashboardNavbar from "../Layout/DashboardNavbar";
 import NoProject from "./NoProject";
+import Project from "./Project";
 import SearchFilter from "./SearchFilter";
 
 const Dashboard = () => (
@@ -7,7 +9,7 @@ const Dashboard = () => (
     <DashboardNavbar />
     <section className="container-1200 mx-auto">
       <SearchFilter />
-      <NoProject />
+      {projects.length ? <Project /> : <NoProject />}
     </section>
   </div>
 );

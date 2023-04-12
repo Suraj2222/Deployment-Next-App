@@ -11,7 +11,7 @@ import { TiTick } from "react-icons/ti";
 import clsx from "clsx";
 
 const Header = () => {
-  const [active, setActive] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className=" bg-gray-50 flex justify-between items-center py-4 mx-3">
@@ -26,15 +26,15 @@ const Header = () => {
             Hobby
           </span>
           <span
-            onClick={() => setActive((prevState) => !prevState)}
-            className={clsx("mr-1", active && "rotate-180 transition-all")}
+            onClick={() => setIsOpen((prevState) => !prevState)}
+            className={clsx("mr-1", isOpen && "rotate-180 transition-all")}
           >
             <AiFillCaretUp />
           </span>
           <div
             className={clsx(
               "absolute top-12 left-3 transition-all translate-y-4 bg-white ",
-              active ? "visible translate-y-1" : "invisible"
+              isOpen ? "visible translate-y-1" : "invisible"
             )}
           >
             <div className="flex justify-between items-center border-2">
