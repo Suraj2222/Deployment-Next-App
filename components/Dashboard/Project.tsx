@@ -64,7 +64,6 @@ const Project = () => {
           </Link>
         )
       )}
-      ;
     </div>
   );
 };
