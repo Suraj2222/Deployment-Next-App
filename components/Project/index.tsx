@@ -9,8 +9,8 @@ const Project = () => {
   const [projectName, setProjectName] = useState("");
 
   useEffect(() => {
-    const { id } = router.query;
-    setProjectName(id);
+    const { title } = router.query;
+    setProjectName(title);
   }, []);
 
   return (
@@ -41,13 +41,13 @@ const Project = () => {
         </div>
         <div className="flex items-center gap-4">
           <button className="transition-all font-normal py-1 px-2 cursor-pointer bg-gray-50 rounded-lg border-2  hover:border-black hover:font-medium">
-            View Build Logs
+            <Link href={`/user/next-js-website/a1b2c3`}>View Build Logs</Link>
           </button>
           <button className="transition-all font-normal py-1 px-2 cursor-pointer bg-gray-50 rounded-lg border-2  hover:border-black hover:font-medium">
-            View Runtime Logs
+            <Link href="">View Runtime Logs</Link>
           </button>
           <button className="transition-all font-normal py-1 px-2 cursor-pointer bg-gray-50 rounded-lg border-2  hover:border-black hover:font-medium">
-            View Domains
+            <Link href="">View Domains</Link>
           </button>
         </div>
       </div>

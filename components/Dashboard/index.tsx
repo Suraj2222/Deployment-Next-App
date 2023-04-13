@@ -1,12 +1,12 @@
-import { projects } from "@/data";
-import DashboardNavbar from "../Layout/DashboardNavbar";
+import { dashboardNavbarItems, projects } from "@/data";
 import NoProject from "./NoProject";
 import Project from "./Project";
 import SearchFilter from "./SearchFilter";
+import Navbar from "../Layout/Navbar";
 
 const Dashboard = () => (
   <div>
-    <DashboardNavbar />
+    <Navbar navItems={dashboardNavbarItems} />
     <section className="container-1200 mx-auto">
       <SearchFilter />
       {projects.length ? <Project /> : <NoProject />}
