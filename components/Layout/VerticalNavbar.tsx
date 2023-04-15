@@ -1,20 +1,18 @@
 import clsx from "clsx";
 import Link from "next/link";
-import React, { useMemo, useState } from "react";
+import { useState } from "react";
 
-const Navbar = ({ navItems }) => {
+const VerticalNavbar = ({ navItems }) => {
   const [active, setActive] = useState("");
 
   return (
-    <ul className="text-md w-screen flex justify-start ml-2 items-center border-2 pt-2 border-solid  border-gray-200">
+    <ul className="sticky top-0 text-mdflex flex-col justify-start ml-2 items-center pt-2 ">
       {navItems.map(({ name, path }) => {
         return (
           <li
             className={clsx(
-              "ml-6",
-              active === ""
-                ? "pb-2 first:border-b-4 first:border-solid first:border-black"
-                : "pb-2 first:border-b-4"
+              "my-1 p-1 w-full hover:bg-gray-100",
+              active === "" ? "first:font-semibold" : ""
             )}
             key={name}
           >
@@ -22,8 +20,7 @@ const Navbar = ({ navItems }) => {
               <span
                 className={clsx(
                   "text-black transition-all hover:font-medium  py-2 text-sm",
-                  active === name.toLowerCase() &&
-                    "border-b-4 border-solid border-black"
+                  active === name.toLowerCase() && "font-semibold"
                 )}
               >
                 {name}
@@ -36,4 +33,4 @@ const Navbar = ({ navItems }) => {
   );
 };
 
-export default Navbar;
+export default VerticalNavbar;

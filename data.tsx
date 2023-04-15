@@ -139,3 +139,77 @@ export const deploymentNavbarItems = [
     name: "Source",
   },
 ];
+
+export const projectSettingsItems = [
+  {
+    path: "/user/next-js-website/settings/",
+    name: "General",
+  },
+  {
+    path: "/user/next-js-website/settings/domains",
+    name: "Domains",
+  },
+  {
+    path: "/user/next-js-website/settings/integrations",
+    name: "Integrations",
+  },
+  {
+    path: "/user/next-js-website/settings/git",
+    name: "Git",
+  },
+  {
+    path: "/user/next-js-website/settings/functions",
+    name: "Functions",
+  },
+  {
+    path: "/user/next-js-website/settings/cron-jobs",
+    name: "Cron Jobs",
+  },
+  {
+    path: "/user/next-js-website/settings/enviroment-variables",
+    name: "Environment Variables",
+  },
+  {
+    path: "/user/next-js-website/settings/deployment-protection",
+    name: "Deployment Protection",
+  },
+  {
+    path: "/user/next-js-website/settings/security",
+    name: "Security",
+  },
+  {
+    path: "/user/next-js-website/settings/advanced",
+    name: "Advanced",
+  },
+];
+
+export const accountSettingsItems = [
+  {
+    path: "/account/",
+    name: "General",
+  },
+  {
+    path: "/account/login-connections",
+    name: "Login Connections",
+  },
+  {
+    path: "/account/teams",
+    name: "Teams",
+  },
+  {
+    path: "/account/billing",
+    name: "Billing",
+  },
+  {
+    path: "/account/invoices",
+    name: "Invoices",
+  },
+  {
+    path: "/account/tokens",
+    name: "Tokens",
+  },
+  {
+    path: "/account/my-notification",
+    name: "My Notification",
+  },
+];
