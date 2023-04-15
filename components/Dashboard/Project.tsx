@@ -20,7 +20,7 @@ const Project = () => {
     <div className="flex justify-center items-center flex-wrap">
       {projects?.map(
         ({ id, title, url, lastCommitMsg, branch, duration, gitPlatform }) => (
-          <Link key={id} href={`/user/${id}`}>
+          <Link key={id} href={`/user/${title}`}>
             <div
               onMouseEnter={() => setHovering(id)}
               onMouseLeave={() => setHovering(null)}

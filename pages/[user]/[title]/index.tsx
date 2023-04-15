@@ -1,11 +1,12 @@
-import ProjectNavbar from "@/components/Layout/ProjectNavbar";
+import Navbar from "@/components/Layout/Navbar";
 import Project from "@/components/Project";
+import { projectNavbarItems } from "@/data";
 import React from "react";
 
 const ProjectPage = () => {
   return (
     <>
-      <ProjectNavbar />
+      <Navbar navItems={projectNavbarItems} />
       <Project />
     </>
   );
